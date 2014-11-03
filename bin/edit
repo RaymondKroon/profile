@@ -1,1 +1,2 @@
-/home/raymond/bin/edit
+#!/bin/bash
+exec emacsclient --alternate-editor="" "$@"
