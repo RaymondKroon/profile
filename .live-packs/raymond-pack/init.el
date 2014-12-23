@@ -5,6 +5,8 @@
 
 ;; Load bindings config
 (live-load-config-file "bindings.el")
+(live-load-config-file "docker-mode.el")
+
 (require 'iso-transl)
 
 (global-set-key (kbd "<backtab>") 'un-indent-by-removing-4-spaces)
