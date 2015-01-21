@@ -116,6 +116,6 @@ if test -f $HOME/.gpg-agent-info &&    kill -0 ‘cut -d: -f 2 $HOME/.gpg-agent-
     GPG_AGENT_INFO=‘cat $HOME/.gpg-agent-info‘
     export GPG_AGENT_INFO
 else
-    eval $(gpg-agent --daemon --enable-ssh-support)
+    eval $(gpg-agent --daemon --enable-ssh-support --default-cache-ttl 600)
     echo $GPG_AGENT_INFO >$HOME/.gpg-agent-info
 fi
