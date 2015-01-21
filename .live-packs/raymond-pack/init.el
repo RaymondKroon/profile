@@ -28,3 +28,6 @@
         (untabify (match-beginning 0) (match-end 0)))
       (when (looking-at "^    ")
         (replace-match "")))))
+
+;; cider
+(global-company-mode)
