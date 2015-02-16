@@ -1,4 +1,5 @@
 {:user {:plugins [[cider/cider-nrepl "0.8.1"]
+                  [refactor-nrepl "0.2.2"]
                   ]
         :dependencies [[raymond/debug-tools "0.1.4"]
                        [spyscope "0.1.5"]
