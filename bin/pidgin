@@ -1,0 +1,8 @@
+#!/bin/sh
+# LANG=C pactl list | grep -A2 'Sink #' | grep 'Name: ' | cut -d" " -f2
+# LANG=C pactl list | grep -A2 'Source #' | grep 'Name: ' | cut -d" " -f2
+
+export PULSE_SINK="alsa_output.hw_0_0"
+export PULSE_SOURCE="alsa_output.hw_0_0.monitor"
+
+/usr/bin/pidgin &
