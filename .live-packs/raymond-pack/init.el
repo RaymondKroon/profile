@@ -6,9 +6,11 @@
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 (live-load-config-file "docker-mode.el")
+(live-load-config-file "adoc-mode.el")
 
 (require 'iso-transl)
 (require 'package)
+(require 'adoc-mode)
 ;;(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 ;; (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (when (< emacs-major-version 24)
