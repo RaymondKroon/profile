@@ -6,7 +6,7 @@
                        [leiningen #=(leiningen.core.main/leiningen-version)]
                        [org.clojure/tools.namespace "0.2.8"]
                        [io.aviso/pretty "0.1.14"]
-                       [im.chit/vinyasa "0.3.0"]]
+                       [im.chit/vinyasa "0.3.4"]]
         :signing {:gpg-key "raymond@clojars"}
         :injections
    [(require 'spyscope.core)
@@ -18,7 +18,6 @@
 
      ;; note that `:refer, :all and :exclude can be used
      [vinyasa.inject :refer [inject [in inject-in]]]
-     [vinyasa.lein :exclude [*project*]]
 
      ;; imports all functions in vinyasa.pull
      [vinyasa.pull :all]
