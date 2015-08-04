@@ -7,6 +7,7 @@
 (live-load-config-file "bindings.el")
 (live-load-config-file "docker-mode.el")
 (live-load-config-file "adoc-mode.el")
+(live-load-config-file "go-mode.el")
 
 (require 'iso-transl)
 (require 'package)
