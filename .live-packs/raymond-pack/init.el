@@ -3,11 +3,14 @@
 ;; Use this file to initiate the pack configuration.
 ;; See README for more information.
 
+(live-add-pack-lib "company")
+
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 (live-load-config-file "docker-mode.el")
 (live-load-config-file "adoc-mode.el")
 (live-load-config-file "go-mode.el")
+(live-load-config-file "rust-mode.el")
 
 (require 'iso-transl)
 (require 'package)
