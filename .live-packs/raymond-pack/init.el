@@ -4,13 +4,17 @@
 ;; See README for more information.
 
 (live-add-pack-lib "company")
+(live-add-pack-lib "flycheck")
+(live-add-pack-lib "irony")
 
 ;; Load bindings config
+(live-load-config-file "let-alist.el")
 (live-load-config-file "bindings.el")
 (live-load-config-file "docker-mode.el")
 (live-load-config-file "adoc-mode.el")
 (live-load-config-file "go-mode.el")
 (live-load-config-file "rust-mode.el")
+(live-load-config-file "irony-mode.el")
 
 (require 'iso-transl)
 (require 'package)

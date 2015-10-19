@@ -1,0 +1,19 @@
+language: emacs-lisp
+sudo: false
+env:
+  # Run unit tests against oldest supported stable, latest stable, and trunk
+  - TRAVIS_BUILD=unit EMACS_VERSION=24.3
+  - TRAVIS_BUILD=unit EMACS_VERSION=24.5
+  - TRAVIS_BUILD=unit EMACS_VERSION=trunk
+  - TRAVIS_BUILD=manual EMACS_VERSION=trunk
+before_install:
+  - export PATH="$HOME/.cask/bin:$HOME/bin:$PATH"
+  - make -f travis.mk before_install
+install:
+  - make -f travis.mk install
+script:
+  - make -f travis.mk script
+matrix:
+  # Fast fail if any job fails.  We don't need to run all integration tests, if
+  # the unit tests fail already.
+  fast_finish: true
