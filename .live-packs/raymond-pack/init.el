@@ -6,6 +6,7 @@
 (live-add-pack-lib "company")
 (live-add-pack-lib "flycheck")
 (live-add-pack-lib "irony")
+(live-add-pack-lib "ggtags")
 
 (require 'let-alist)
 (require 'sr-speedbar)
@@ -17,6 +18,7 @@
 (live-load-config-file "go-mode.el")
 (live-load-config-file "rust-mode.el")
 (live-load-config-file "irony-mode.el")
+(live-load-config-file "ggtags.el")
 
 (require 'iso-transl)
 (require 'package)
@@ -41,7 +43,6 @@
       (when (looking-at "^    ")
         (replace-match "")))))
 
-(global-set-key [f11] 'sr-speedbar-toggle)
 (custom-set-variables
  '(speedbar-show-unknown-files t)
 )

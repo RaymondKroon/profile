@@ -49,7 +49,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="~/android-studo/bin:/usr/local/heroku/bin:/home/raymond/.rvm/gems/ruby-2.2.0/bin:/home/raymond/.rvm/gems/ruby-2.2.0@global/bin:/home/raymond/.rvm/rubies/ruby-2.2.0/bin:/home/raymond/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/raymond/.rvm/bin"
+export PATH="~/android-studo/bin:/usr/local/heroku/bin:/home/raymond/.rvm/gems/ruby-2.2.0/bin:/home/raymond/.rvm/gems/ruby-2.2.0@global/bin:/home/raymond/.rvm/rubies/ruby-2.2.0/bin:/home/raymond/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/raymond/.rvm/bin:/home/raymond/.go/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -80,7 +80,17 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR=~/bin/edit
+export RUST_SRC_PATH=~/Development/rust/src
 alias edit="~/bin/edit -n"
 export SUDO_EDITOR="~/bin/edit -t -a"
 
+export GOPATH="$HOME/.go/"
+
 source ~/.rvm/scripts/rvm
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export GTAGSCONF=/usr/local/share/gtags/gtags.conf
+export GTAGSLABEL=pygments
+export GTAGSLIBPATH=$HOME/.gtags/
