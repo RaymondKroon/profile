@@ -7,8 +7,10 @@
 (live-add-pack-lib "flycheck")
 (live-add-pack-lib "irony")
 
+(require 'let-alist)
+(require 'sr-speedbar)
+
 ;; Load bindings config
-(live-load-config-file "let-alist.el")
 (live-load-config-file "bindings.el")
 (live-load-config-file "docker-mode.el")
 (live-load-config-file "adoc-mode.el")
@@ -38,3 +40,8 @@
         (untabify (match-beginning 0) (match-end 0)))
       (when (looking-at "^    ")
         (replace-match "")))))
+
+(global-set-key [f11] 'sr-speedbar-toggle)
+(custom-set-variables
+ '(speedbar-show-unknown-files t)
+)
